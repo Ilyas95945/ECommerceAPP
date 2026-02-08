@@ -1,0 +1,22 @@
+{
+  "name": "ecommerceapp-web",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "expo start --web",
+    "build": "expo export --platform web",
+    "serve": "npx serve dist"
+  },
+  "dependencies": {
+    "expo": "~53.0.22",
+    "expo-router": "~5.1.5",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "react-native": "0.79.6",
+    "react-native-web": "~0.20.0"
+  },
+  "devDependencies": {
+    "@expo/webpack-config": "^19.0.0",
+    "serve": "^14.2.0"
+  }
+}

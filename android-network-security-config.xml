@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">localhost</domain>
+        <domain includeSubdomains="true">10.0.2.2</domain>
+        <domain includeSubdomains="true">127.0.0.1</domain>
+        <!-- Yaygın görsel hosting servisleri -->
+        <domain includeSubdomains="true">images.unsplash.com</domain>
+        <domain includeSubdomains="true">picsum.photos</domain>
+        <domain includeSubdomains="true">via.placeholder.com</domain>
+        <domain includeSubdomains="true">loremflickr.com</domain>
+        <domain includeSubdomains="true">picsum.photos</domain>
+        <domain includeSubdomains="true">source.unsplash.com</domain>
+    </domain-config>
+    
+    <!-- HTTPS zorunlu olmayan domainler için -->
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system"/>
+        </trust-anchors>
+    </base-config>
+</network-security-config>
